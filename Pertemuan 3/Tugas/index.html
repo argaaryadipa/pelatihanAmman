@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Form</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      th,
+      td {
+        padding: 10px;
+      }
+
+      th {
+        background-color: rgb(19, 110, 170);
+        color: white;
+      }
+
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Awal Form -->
+    <form action="" method="post">
+      <!-- Awal Tabel -->
+      <table border="1">
+        <!-- Header Tabel -->
+        <tr>
+          <th colspan="2">Mengisi Buku Tamu</th>
+        </tr>
+
+        <!-- Nama -->
+        <tr>
+          <td>Nama :</td>
+          <td>
+            <textarea name="nama" id="nama" cols="30" rows="1"></textarea>
+          </td>
+        </tr>
+
+        <!-- E-mail -->
+        <tr>
+          <td>E-mail :</td>
+          <td>
+            <textarea name="email" id="email" cols="30" rows="1"></textarea>
+          </td>
+        </tr>
+
+        <!-- Asal -->
+        <tr>
+          <td>Asal :</td>
+          <td>
+            <select name="boxPilihan" id="">
+              <option value="">Pulau Jawa</option>
+              <option value="">Pulau Kalimantan</option>
+              <option value="">Pulau Sumatra</option>
+              <option value="">Pulau Papua</option>
+              <option value="">Pulau Sulawesi</option>
+              <option value="">Pulau Bali</option>
+              <option value="">Pulau Lombok</option>
+              <option value="">Pulau Sumbawa</option>
+            </select>
+          </td>
+        </tr>
+
+        <!-- Jenis Kelamin -->
+        <tr>
+          <td>Jenis Kelamin :</td>
+          <td>
+            <input
+              type="radio"
+              id="lakiLaki"
+              name="jenisKelamin"
+              value="lakiLaki"
+            />
+            <label for="lakiLaki">Laki-laki</label>
+            <input
+              type="radio"
+              id="perempuan"
+              name="jenisKelamin"
+              value="perempuan"
+            />
+            <label for="perempuan">Perempuan</label>
+          </td>
+        </tr>
+
+        <!-- Komentar -->
+        <tr>
+          <td>Komentar Anda :</td>
+          <td>
+            <textarea
+              id="komentar"
+              name="komentar"
+              rows="4"
+              cols="50"
+            ></textarea>
+          </td>
+        </tr>
+
+        <!-- Button -->
+        <tr>
+          <td colspan="2">
+            <center>
+              <input type="submit" value="Selesai" />
+              <input type="reset" value="Hapus" />
+            </center>
+          </td>
+        </tr>
+        <!-- Akhir Tabel -->
+      </table>
+      <!-- Akhir Form -->
+    </form>
+  </body>
+</html>
