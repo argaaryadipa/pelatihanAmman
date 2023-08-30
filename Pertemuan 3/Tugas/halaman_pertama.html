@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pertemuan 3</title>
+    <!-- <style>
+      table {
+        border-collapse: collapse;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      th,
+      td {
+        padding: 10px;
+      }
+
+      th {
+        background-color: rgb(19, 110, 170);
+        color: white;
+      }
+
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+    </style> -->
+  </head>
+  <body>
+    <h1><center>Pertemuan 3</center></h1>
+    <hr />
+
+    <!-- Latihan 1 -->
+    <!-- <h2>Latihan 1</h2>
+    <font face="Arial" size="5"> Halo, saya Arga Aryadipa Nadi </font> -->
+    <!-- <br /> -->
+    <!-- <p>
+      <font face="Verdana" size="3">
+        Saya manusia <u>random</u> yang punya banyak hal untuk dilakukan. Saya
+        suka hal-hal yang berbau teknologi, maka dari itu saya ingin selalu
+        update tentang teknologi khsusunya bidang
+        <b><i>Fullstack Developer. </i></b> Sembari mengisi waktu luang, saya
+        mengikuti Program Digital Skills Fullstack Developer yang diselenggarakn
+        oleh <i>PT. Amman Meneral Nusa Tenggara</i>.
+      </font>
+    </p>
+    <p>
+      Awal mula saya tertarik dengan teknologi semenjak saya berumur 5 tahun.
+      Saya biasanya menggunakan komputer milik bapak saya. Saya juga diajar oleh
+      beliau cara mengoperasikan komputer, mulai dari Microsoft Word hingga
+      Power Point. Saya juga pernah mengikuti lomba komputer saat saya masih
+      duduk di bangku sekolah dasar. Saya memperoleh juara ke 2 pada saat itu,
+      karena peserta lombanya hanya 3 orang awokkwok.
+    </p>
+    <p>
+      Saat ini saya sudah menyelesaikan studi saya di
+      <a href="https://universitasbumigora.ac.id/" target="_blank"
+        >Universitas Bumigora Mataram</a
+      >
+    </p>
+    <p>
+      Alasan saya tertarik untuk menjadi seorang
+      <b><i>Fullstack Developer</i></b> adalah
+    </p>
+    <ul>
+      <li>Memiliki <b>ketertarikan yang sangat kuat</b> di bidang IT</li>
+      <li><u>Peluang kerja</u> yang terbuka sangat besar</li>
+      <li>Mengembangkan skill yang sudah saya pelajari sebelumnya</li>
+      <li>
+        Berpartisipasi dalam kehidupan bermasyarakat khususnya di bidang
+        <i>IT</i>
+      </li>
+    </ul>
+
+    <p>
+      <a href="/Pertemuan 3/Tugas/halaman_kedua.html" target="_blank">
+        Masih ada yang lain loh
+      </a>
+    </p> -->
+
+    <h2>
+      <center>Latihan Membuat Form</center>
+    </h2>
+    <!-- Awal Form -->
+    <form action="" method="post">
+      <!-- Awal Tabel -->
+      <center>
+        <table border="1" bgcolor="#EAEDED">
+          <!-- Header Tabel -->
+          <tr>
+            <th colspan="2" bgcolor="#AED6F1">Mengisi Buku Tamu</th>
+          </tr>
+
+          <!-- Nama -->
+          <tr>
+            <td>Nama</td>
+            <td>
+              <textarea name="nama" id="nama" cols="30" rows="1"></textarea>
+            </td>
+          </tr>
+
+          <!-- E-mail -->
+          <tr>
+            <td>E-mail</td>
+            <td>
+              <textarea name="email" id="email" cols="30" rows="1"></textarea>
+            </td>
+          </tr>
+
+          <!-- Asal -->
+          <tr>
+            <td>Asal</td>
+            <td>
+              <select name="boxPilihan" id="">
+                <option value="">Pulau Jawa</option>
+                <option value="">Pulau Kalimantan</option>
+                <option value="">Pulau Sumatra</option>
+                <option value="">Pulau Papua</option>
+                <option value="">Pulau Sulawesi</option>
+                <option value="">Pulau Bali</option>
+                <option value="">Pulau Lombok</option>
+                <option value="">Pulau Sumbawa</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- Jenis Kelamin -->
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+              <input
+                type="radio"
+                id="lakiLaki"
+                name="jenisKelamin"
+                value="lakiLaki"
+              />
+              <label for="lakiLaki">Laki-laki</label>
+              <input
+                type="radio"
+                id="perempuan"
+                name="jenisKelamin"
+                value="perempuan"
+              />
+              <label for="perempuan">Perempuan</label>
+            </td>
+          </tr>
+
+          <!-- Komentar -->
+          <tr>
+            <td>Komentar Anda</td>
+            <td>
+              <textarea
+                id="komentar"
+                name="komentar"
+                rows="5"
+                cols="50"
+              ></textarea>
+            </td>
+          </tr>
+
+          <!-- Button -->
+          <tr>
+            <td colspan="2" bgcolor="#AED6F1">
+              <center>
+                <input type="submit" value="Selesai" />
+                <input type="reset" value="Hapus" />
+              </center>
+            </td>
+          </tr>
+          <!-- Akhir Tabel -->
+        </table>
+        <!-- Akhir Form -->
+      </center>
+    </form>
+  </body>
+</html>
