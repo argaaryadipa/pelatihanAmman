@@ -38,7 +38,8 @@ td {
 }
 
 button {
-  background-color: #85c1e9;
+  /* background-color: #85c1e9; */
+  background-color: rgb(19, 110, 170);
   padding: 5px;
-  /* color: white; */
+  color: white;
 }
