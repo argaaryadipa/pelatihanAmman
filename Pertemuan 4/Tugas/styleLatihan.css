@@ -1,0 +1,44 @@
+/* .format1 {
+  font-family: Verdana;
+  font-size: 16pt;
+  color: bule;
+}
+.format2 {
+  font-family: Tahoma;
+  font-size: 10pt;
+  color: green;
+}
+
+a {
+  font-family: Arial;
+  font-size: 11pt;
+  color: red;
+}
+h1 {
+  font-family: Trebuchet MS;
+  font-size: 18pt;
+  color: gray;
+} */
+
+/*  */
+.format1 {
+  font-family: Verdana;
+  font-size: 20pt;
+  color: purple;
+}
+.format2 {
+  font-family: Tahoma;
+  font-size: 9pt;
+  color: teal;
+}
+
+a {
+  font-family: Arial;
+  font-size: 11pt;
+  color: magenta;
+}
+h1 {
+  font-family: Trebuchet MS;
+  font-size: 24pt;
+  color: olive;
+}
