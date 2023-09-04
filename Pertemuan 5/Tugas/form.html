@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Form</title>
+    <link rel="stylesheet" type="text/css" href="/Pertemuan 5/Tugas/style.css">
+</head>
+
+<body>
+  
+    <center>
+        <h1>Membuat Form Menggunakan <i>HTML</i>, <i>CSS</i>, dan <i>JAVASCRIPT</i></h1>
+    </center>
+    <hr> <br>
+
+    <!-- Awal Form -->
+    <form action="" method="post" name="form" id="form">
+      <!-- Awal Tabel -->
+      <center>
+        <table border="1" class="formTabel">
+          <!-- Header Tabel -->
+          <tr>
+            <th colspan="2">Mengisi Buku Tamu</th>
+          </tr>
+
+          <!-- Nama -->
+          <tr>
+            <td>Nama</td>
+            <td>
+              <input type="text" name="nama" id="nama" size="35" placeholder="Masukan Nama" required>
+            </td>
+          </tr>
+
+          <!-- E-mail -->
+          <tr>
+            <td>E-mail</td>
+            <td>
+              <input type="email" name="email" id="email" size="35" placeholder="Masukan Email" required>
+            </td>
+          </tr>
+
+          <!-- Tanggal Lahir -->
+          <tr>
+            <td>Tanggal Lahir</td>
+            <td><input type="date" name="ttl" id="ttl" required/></td>
+          </tr>
+
+          <!-- Asal -->
+          <tr>
+              <td>Asal</td>
+              <td>
+                <select name="boxPilihan" id="boxPilihan" required>
+                <option value="Pulau Jawa">Pulau Jawa</option>
+                <option value="Pulau Kalimantan">Pulau Kalimantan</option>
+                <option value="Pulau Sumatra">Pulau Sumatra</option>
+                <option value="Pulau Papua">Pulau Papua</option>
+                <option value="Pulau Sulawesi">Pulau Sulawesi</option>
+                <option value="Pulau Bali">Pulau Bali</option>
+                <option value="Pulau Lombok">Pulau Lombok</option>
+                <option value="Pulau Sumbawa">Pulau Sumbawa</option>
+              </select>
+              <br>
+              <div id="info"></div>
+            </td>
+          </tr>
+
+          <!-- Jenis Kelamin -->
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+              <input
+                type="radio"
+                id="lakiLaki"
+                name="jenisKelamin"
+                value="lakiLaki"
+                required
+              />
+              <label for="lakiLaki">Laki-laki</label>
+              <input
+                type="radio"
+                id="perempuan"
+                name="jenisKelamin"
+                value="perempuan"
+                required
+              />
+              <label for="perempuan">Perempuan</label>
+            </td>
+          </tr>
+
+          
+          <!-- No. Telepon -->
+          <tr>
+            <td>No. Telepon</td>
+            <td>
+              <input type="number" name="noTelepon" id="noTelepon" placeholder="Masukan No Telepon" required>
+            </td>
+          </tr>
+          
+          <!-- Foto -->
+           <tr>
+             <td>Foto</td>
+             <td>
+               <input type="file" name="foto" id="foto" required>
+             </td>
+           </tr> 
+
+          <!-- Komentar -->
+          <tr>
+            <td>Komentar Anda</td>
+            <td>
+              <textarea
+                id="komentar"
+                name="komentar"
+                rows="5"
+                cols="50"
+                placeholder="Masukan komentar"
+              ></textarea>
+              <br>
+              <input type="checkbox">Kirim data ini ke email saya?
+            </td>
+          </tr>
+
+          <!-- Button -->
+          <tr>
+            <td colspan="2">
+              <center>
+                <button class="btn btn-primary" type="submit" value="Selesai" onclick="alert('Yakin ingin menyimpan data?')">
+                  Selesai
+                </button>
+                <button class="btn btn-danger" type="reset" value="hapus" onclick="alert('Yakin ingin menghapus data?')">
+                  Hapus
+                </button>
+              </center>
+            </td>
+          </tr>
+          <!-- Akhir Tabel -->
+        </table>
+        <!-- Akhir Form -->
+      </center>
+
+  <script src="/Pertemuan 5/Tugas/form.js"></script>
+</body>
+</html>
