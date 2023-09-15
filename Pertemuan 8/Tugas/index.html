@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Selector</title>
+  </head>
+  <body>
+    <h2>Latihan Selector by ID</h2>
+    <p id="intro">Eren Yeager</p>
+    <p id="demo">Shiganshina</p>
+
+    <p class="coba">Hola amigo</p>
+    <p class="coba">Hello my friends</p>
+    <p class="coba">Halo teman teman</p>
+
+    <p id="name">Arga</p>
+    <button type="button" onclick="sayHello('Arga')">Klik me</button>
+
+    <script>
+      let element = document.getElementById("intro");
+      let element_tag = document.getElementsByTagName("h2");
+
+      document.getElementById("demo").innerHTML =
+        "Teks pada paragraf pertama adalah : " + element_tag[0].innerHTML;
+
+      var coba = document.getElementsByClassName("intro");
+      document.getElementById("demo").innerHTML =
+        'Paragraf pertama (indeks 0) dengan class="intro" adalah: ' +
+        coba[0].innerHTML;
+
+      function sayHello(name) {
+        alert("Halo " + name);
+      }
+
+      //   Perulangan
+      for (let index = 0; index < 10; index++) {
+        document.write("Perulangan ke - ") + index;
+      }
+
+      // data Array
+      let dataArray = ["Luffy", "Zoro", "Nami", "Usopp", "Sanji"];
+      for (let index = 2; index < dataArray.length; index++) {
+        document.write("<p>Nama " + dataArray[index] + "<p>");
+      }
+    </script>
+  </body>
+</html>
