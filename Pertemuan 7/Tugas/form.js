@@ -39,12 +39,3 @@ function tampil() {
   document.write("Komentar Anda    : " + komentar + "<br>");
 }
 document.getElementById("form").onsubmit = tampil;
-
-$("#selesai").click(function () {
-  Swal.fire({
-    icon: "success",
-    title: "Inserted Successfully",
-    html: "Nama : " + $("#nama").val() + "<br>",
-    // "Age : " + $("#age").val(),
-  });
-});

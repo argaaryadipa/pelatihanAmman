@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 2 Membuat Fungsi</title>
+  </head>
+  <body>
+    <!-- Membuat fungsi saat link diklik -->
+    <a href="#" onclick="kali(8, 3)">Klik Aku!</a>
+    <input type="text" id="hasilKali" />
+
+    <script>
+      // Membuat Fungsi
+      function kali(a, b) {
+        hasilKali = a * b;
+        document.getElementById("hasilKali").value = hasilKali;
+      }
+    </script>
+  </body>
+</html>

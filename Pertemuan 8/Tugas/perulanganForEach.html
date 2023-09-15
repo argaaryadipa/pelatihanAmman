@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perulangan dengan ForEach</title>
+  </head>
+  <body>
+    <h2>Perulangan dengan ForEach</h2>
+
+    <script>
+      // Berikut ini bentuk perulangan "foreach" tanpa menggunakan operator in :
+      var nama = ["Luffy", "Zoro", "Nami", "Usopp", "Sanji"];
+      for (i = 0; i < nama.length; i++) {
+        document.write(i + ". " + nama[i] + "<br/>");
+      }
+
+      // Perulangan ini dapat dibuat lebih sederhana lagi dengan menggunakan operator in seperti ini :
+      var arc = ["Wano", "Dressrosa", "Marineford", "EniesLobby", "Skypiea"];
+      for (i in arc) {
+        document.write(i + "." + arc[i] + "<br>");
+      }
+    </script>
+  </body>
+</html>
