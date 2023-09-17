@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perulangan Kata</title>
+    <link rel="stylesheet" href="/Pertemuan 8/Tugas/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Perulangan Kata</h2>
+
+      <label>
+        Silahkan masukan kata yang akan diulangi
+        <br />
+        <input type="text" name="teks" id="teks" placeholder="Masukan kata" />
+      </label>
+      <br /><br />
+      <label>
+        Silahkan masukan jumlah perulangan
+        <br />
+        <input
+          type="number"
+          name="number"
+          id="number"
+          placeholder="Masukan jumlah"
+        />
+      </label>
+      <br /><br />
+      <button type="button" id="tombol" onclick="tampil()">Mulai</button>
+
+      <div id="hasil"></div>
+    </div>
+  </body>
+  <script>
+    function tampil() {
+      // Mengambil nilai teks yang diinputkan
+      let teks = document.getElementById("teks").value;
+      // Mengambil jumlah nilai yang diinputkan
+      let number = document.getElementById("number").value;
+
+      // Perulangan
+      for (let index = 0; index < parseInt(number); index++) {
+        // Membuat elemen paragraf
+        const node = document.createElement("p");
+        // Menampilkan text yg diinput berdasaekan id "teks"
+        const textnode = document.createTextNode(teks);
+        // Perulangan pada text
+        node.appendChild(textnode);
+        // Menampilkan perulangan pada div
+        document.getElementById("hasil").appendChild(node);
+        // Cetak jumlah perulangan
+        console.log(number);
+        // document.write("Tulisan " + teks + "Perulangan ke " + number);
+      }
+    }
+  </script>
+</html>
