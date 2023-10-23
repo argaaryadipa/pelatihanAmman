@@ -13,7 +13,7 @@ class BarangController extends Controller
             ['nama' => 'celana', 'jumlah' => 15, 'harga' => 70000],
             ['nama' => 'hoodie', 'jumlah' => 20, 'harga' => 60000]
         ];
-        return view('barang.list', compact('datas'));
+        return view('barang/list', compact('datas'));
     }
 
     public function listBarangDiskon() {
@@ -22,6 +22,6 @@ class BarangController extends Controller
             ['nama' => 'celana bekas', 'jumlah' => 15, 'harga' => 70000],
             ['nama' => 'hoodie bekas', 'jumlah' => 20, 'harga' => 60000]
         ];
-        return view('barang.diskon.list', compact('diskon'));
+        return view('barang/diskon/list', compact('diskon'));
     }
 }
